@@ -1,0 +1,20 @@
+{
+  "name": "ud01-lab01-express",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto de an\u00e1lisis de estructura para UD01 LAB01",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "build": "node --check src/server.js && node --check src/app.js && node --check src/controllers/noticeController.js && node --check src/services/noticeService.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
